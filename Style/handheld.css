@@ -1,0 +1,139 @@
+
+body{
+    margin:0;
+    font-family:FbSpoiler;
+    font-weight: lighter;
+    font-size:17px;
+    width: 100%;
+}
+
+.header{
+    width: 100%;
+    background: #ffffff;
+    height: 64px;
+}
+
+.container{
+    width: 950px;
+    margin:0 auto;
+}
+
+button{
+    margin-bottom: 100px;
+}
+
+input{
+    display: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+    padding-bottom: 50px;
+  }
+
+li{
+    display: inline-block;
+    direction: rtl;
+}
+
+.content__menu{
+    width: 100%;
+    height: 75px;
+    margin-top: 13px;
+}
+
+.content__back__text{
+    text-align: center;
+    color: white;
+}
+
+.content__back__arrow{
+    background-image: url(../mobi/circ\ arrow.png);
+    height: 10px;
+    width: 10px;
+}
+
+#dropStatus {
+    text-transform: capitalize;
+}
+
+#dropZone {
+    width: 800px;
+    height: 300px;
+    padding: 2rem;
+    background-color: lightslategrey;
+    border: 2px solid darkslategray;
+    margin-bottom: 2rem;
+    transition: background-color .2s;
+}
+
+#dropZone.over {
+    background-color: lightgreen;
+}
+
+#dropTitle {
+    text-transform: capitalize;
+}
+
+.objects {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 0 1rem;
+    background-color: rosybrown;
+    cursor: move;
+    text-transform: capitalize;
+    user-select: none;
+}
+
+.objects.dragged {
+    background-color: firebrick;
+    border-radius: 5px;
+}
+
+#readDropZone {
+    text-transform: capitalize;
+    cursor: pointer;
+    border: none;
+    background-color: cornflowerblue;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+}
+
+.thumb {
+    height: 75px;
+    border: 1px solid #000;
+    margin: 10px 5px 0 0;
+  }
+
+  .dropzone {
+    width: 200px;
+    height: 20px;
+    background: blueviolet;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .draggable {
+    border: 1px solid black;
+    width: 30px;
+    height: 20px;
+    float: left;
+    margin-right: 5px;
+}
+
+#target {
+    border: 1px solid black;
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+}
+.mydiv {
+    float: left;
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
