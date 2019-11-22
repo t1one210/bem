@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BEM</title>
+    <meta charset="utf-8">  
+    <link rel="stylesheet" type="text/css" href="style/handheld.css">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../Практика/js.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+           
+            
+        </div>
+
+    </header>
+    <div class="content">
+        <div class="content__back">
+            <div class="container">
+               
+                    <form enctype="multipart/form-data">
+                            
+                            <p>
+                                <input type="file" id="files">
+                                <label for="files">Выберите или переместите один файл</label>
+                            </p>
+                            <div id="target" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <ul id="sortable">
+                                        <li><output id = "list" draggable="true" ondragstart="drag(event)"></output> </li>
+                                </ul>
+                            </div>
+                            
+                            <ul>
+                                <li class="li-distance">1</li>
+                                <li class="li-distance">2</li>
+                                <li class="li-distance">3</li>
+                                <li class="li-distance">4</li>
+                            </ul>
+                            
+                    </form> 
+            </div>
+    </div>
+
+    <footer>
+        
+    </footer>
+</body>
+</html>
