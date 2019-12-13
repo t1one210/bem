@@ -84,7 +84,7 @@
 }
 
 .b-content{
-    background-image: url("../mobi/shutterstock_374227000.png");
+    background-image: url("mobi/shutterstock_374227000.png");
     background-size: 100% 9.37%; 
     background-repeat: no-repeat;
 }
@@ -146,7 +146,7 @@
 
 .b-left__image-arrow{
     display: block;
-    background-image: url("../mobi/circarrow.png");
+    background-image: url("mobi/circarrow.png");
     background-repeat: no-repeat;
     width: 43%;
     margin-top: 10px;
@@ -319,7 +319,7 @@
     font-size: 0px;
     margin-right: -4px;
     border-width: 10px 3px 0px;
-    background-image: url(../mobi/send.png);
+    background-image: url(mobi/send.png);
     background-repeat: no-repeat;
     height: 39px;
     width: 14%;
@@ -373,7 +373,7 @@ input{
 .b-page__footer__back__white_blog-blog{
     width: 100%;
     padding-top: 30px;
-    padding-left: 0px;
+    padding-left: 25px;
 }
 
 .b-page__footer__back__white_blog-blog-img{

@@ -53,12 +53,16 @@ input {
     border-width: 9px 13px;
 }
 
+.b-right{
+    width: 60%;
+}
+
 .b-left{
     margin-top: -21px;
     float: left;
     position: relative;
     right: 25px;
-    width: 34%;
+    width: 40%;
     direction: rtl;
 }
 

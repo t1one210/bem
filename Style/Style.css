@@ -378,7 +378,7 @@ li{
 }
 
 .b-page__footer__back__supports{
-    background-image: url("../bg\ copy\ 5.png");
+    background-image: url("bg\ copy\ 5.png");
     background-position: center;
     width: 100%;
     height: 448px;
@@ -414,7 +414,7 @@ li{
 }
 
 .b-page__footer__back__elem_qa-img{
-    background-image: url("../img/qa.png");
+    background-image: url("qa.png");
     background-repeat: no-repeat;
     width: 33%;
     height: 50px;
@@ -448,7 +448,7 @@ p{
 }
 
 .b-page__footer__back__elem_blog-img{
-    background-image: url("../img/blog\ icon.png");
+    background-image: url("blog\ icon.png");
     background-repeat: no-repeat;
     width: 33%;
     height: 50px;
@@ -463,7 +463,7 @@ p{
 }
 
 .b-page__footer__back__elem_chat-img{
-    background-image: url("../img/chat\ icon.png");
+    background-image: url("chat\ icon.png");
     background-repeat: no-repeat;
     width: 33%;
     height: 50px;
