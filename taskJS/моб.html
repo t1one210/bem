@@ -7,7 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="../Практика/js.js"></script>
+    <script src="js.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
     
 </head>
@@ -23,15 +23,15 @@
         <div class="content__back">
             <div class="container">
                
-                    <form enctype="multipart/form-data">
+                    <form enctype="multipart/form-data" id="fils">
                             
                             <p>
-                                <input type="file" id="files">
+                                <input type="file" id="files" name="files[]" multiple accept="image/*">
                                 <label for="files">Выберите или переместите один файл</label>
                             </p>
                             <div id="target" ondrop="drop(event)" ondragover="allowDrop(event)">
                                 <ul id="sortable">
-                                        <li><output id = "list" draggable="true" ondragstart="drag(event)"></output> </li>
+                                        <li><output id = "list"></output> </li>
                                 </ul>
                             </div>
                             
@@ -40,8 +40,12 @@
                                 <li class="li-distance">2</li>
                                 <li class="li-distance">3</li>
                                 <li class="li-distance">4</li>
+                                <li class="li-distance">5</li>
+                                <li class="li-distance">6</li>
+                                <li class="li-distance">7</li>
+                                <li class="li-distance">8</li>
                             </ul>
-                            
+                            <input type="submit" id="test">
                     </form> 
             </div>
     </div>
