@@ -4,6 +4,7 @@ class TY {
         this.y=y;
     }
     moveTo() {}
+    landingTo() {}
 }
 
 class MIG extends TY{
@@ -12,12 +13,12 @@ class MIG extends TY{
 }
 
 var ty = new TY(0,0);
-ty.moveTo(); //взлет
+ty.landingTo(); //взлет
 ty.moveTo(10,10); //полет
-ty.moveTo(); //посадка
+ty.landingTo(); //посадка
 
 var mig = new MIG(15,15);
-mig.moveTo(0,0); //взлет
+mig.landingTo(0,0); //взлет
 mig.moveTo(10,10); //полет
-mig.moveTo(0,0); //посадка
+mig.landingTo(0,0); //посадка
 mig.fireTo();
