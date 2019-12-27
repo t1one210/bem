@@ -13,10 +13,29 @@ body{
     height: 64px;
 }
 
-.container{
+#container{
     width: 950px;
     margin:0 auto;
 }
+
+#greyProgress {
+    width: 100%;
+    background-color: #ddd;
+  }
+
+#greenBar {
+    width: 10%;
+    height: 30px;
+    background-color: #4CAF50;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+
+#amount {
+    position:absolute; right:30px; top:60px; font-size:80%;
+    font-weight:bold;
+  }
 
 button{
     margin-bottom: 100px;
@@ -135,11 +154,14 @@ output img {
 }
 
 li.li-distance {
-    margin-left: 46px;
-    margin-right: 26px;
+    width: 3%;
+    margin-left: 5.4%;
 }
 
 label {
     border: 2px solid #31800085;
     background: #31800085;
+}
+.number-li{
+    width: 100%;
 }
