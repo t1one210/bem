@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BEM</title>
+    <meta charset="utf-8">  
+    <link rel="stylesheet" type="text/css" href="style/handheld.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="progressbar.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+           
+            
+        </div>
+
+    </header>
+    <div class="content">
+        <div class="content__back">
+            <div id="container">
+               
+                <form enctype="multipart/form-data" id="files" >
+                            
+                    <p>
+                        <input type="file" id="fils" name="files[]" multiple accept="image/*">
+                        <label for="fils">Выберите или переместите один файл</label>
+                    </p>
+                    <div id="target" ondragover="allowDrop(event)">
+                        <ul id="sortable">
+                          <li><output id = "list"></output> </li>
+                                
+                        </ul>
+                    </div>
+                    <script src="js.js"></script>
+                    <ul class="number-li">
+                        <li class="li-distance">1</li>
+                        <li class="li-distance">2</li>
+                        <li class="li-distance">3</li>
+                        <li class="li-distance">4</li>
+                        <li class="li-distance">5</li>
+                        <li class="li-distance">6</li>
+                        <li class="li-distance">7</li>
+                        <li class="li-distance">8</li>
+                        <li class="li-distance">9</li>
+                        <li class="li-distance">10</li>
+                        <li class="li-distance">11</li>
+                    </ul>
+                    <div id="amount"></div>
+                    <div id="greyProgress">
+                        <div id="greenBar">0%</div>
+                    </div>
+                    <input type="submit" id="test">
+                </form> 
+            </div>
+        </div>
+
+    <footer>
+        
+    </footer>
+    
+</body>
+</html>
