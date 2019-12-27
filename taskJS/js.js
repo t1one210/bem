@@ -14,34 +14,36 @@ function drop(event) {
 
 function handleFile(files){
   var len = files.length;
-  for (var i = 0; i < len; i++) {
-
-    if (!files[i].type.match('image.*')) {
-      continue;
-    }
-
-    var reader = new FileReader();
-    if (files.length < 12){
-      reader.onload = (function(theFile) {
-        return function(e) {
-          let img = document.createElement('img');
-          img.src = reader.result;
-          var li = document.createElement('li');
-          li.innerHTML = ['<img class="thumb" src="', e.target.result,
+  var sum = document.getElementById('sortable').getElementsByTagName('li');
+  if (len > 12){
+    alert('Максимум 11 картинок');
+  }
+  else {
+    
+    let x = 13 - sum.length - len;
+    if (x > 0){
+      for (var i = 0; i < len; i++) {
+        console.log('Add file', i);
+        if (!files[i].type.match('image.*')) {
+          continue;
+      }
+  
+      var reader = new FileReader();
+        reader.onload = (function(theFile) {
+          return function(e) {
+            let img = document.createElement('img');
+            img.src = reader.result;
+            var li = document.createElement('li');
+            li.innerHTML = ['<img class="thumb" src="', e.target.result,
             '" title="', escape(theFile.name), '"/>'].join('');
             document.getElementById('list').prepend(li);
-            move(files);
-        };
-      })(files[i]);
+            sum.length;
+            move(files);                
+            };
+        })(files[i]);  
+        reader.readAsDataURL(files[i]);
+      } 
     }
-      
-      var sum = document.getElementsByTagName('li');
-      if (sum.length > 13){
-        alert ("Nyobo Nyobo");
-        //reader.onabort;
-        break;
-      }
-    reader.readAsDataURL(files[i]);
   }
 }
 
